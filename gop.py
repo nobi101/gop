@@ -41,6 +41,8 @@ def logo():
         print('   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚══════╝')
         print(logo)
 
+os.system("cls" if os.name == "nt" else "clear")
+logo()
 a=now.strftime("%d")
 h=int(now.strftime("%d"))
 ngay_trc=h-1
@@ -90,6 +92,7 @@ elif check_file_key == True:
             os.remove(file_key_cu)
         os.remove(file_key)
         print(f'KEY SAI')
+        print(f'[LINK KEY: {link_key}]')
         while(True):
             ma=input(f"NHẬP KEY NGÀY {today}: ")
             if ma == key1 or ma == key2:
