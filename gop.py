@@ -41,8 +41,6 @@ def logo():
         print('   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚══════╝')
         print(logo)
 
-os.system("cls" if os.name == "nt" else "clear")
-logo()
 a=now.strftime("%d")
 h=int(now.strftime("%d"))
 ngay_trc=h-1
