@@ -132,18 +132,22 @@ print("├─────┼─────────────────�
 print("│  3  │ TIỆN ÍCH                           │ ONLINE  │  [1.0]  │")
 print("├─────┼────────────────────────────────────┼─────────┼─────────┤")
 print("│  4  │ PAGE PROFILE                       │ ONLINE  │  [1.0]  │")
+print("├─────┼────────────────────────────────────┼─────────┼─────────┤")
+print("│  5  │ THOÁT TOOL                         │   =.=   │   NEXT  │")
 print("└─────┴────────────────────────────────────┴─────────┴─────────┘\n")
 chon = input("Nhập Lựa Chọn: ")
 os.system("cls" if os.name == "nt" else "clear")
 try:
         if chon == '1':
-                run = requests.get('https://raw.githubusercontent.com/nobi101/d/main/d.md').text
+                run = requests.get('https://raw.githubusercontent.com/nobi101/d/main/d.py').text
         elif chon == '2':
-                run = requests.get('https://raw.githubusercontent.com/nobi101/c/main/c.md').text
+                run = requests.get('https://raw.githubusercontent.com/nobi101/c/main/c.py').text
         elif chon == '3':
-                run = requests.get('https://raw.githubusercontent.com/nobi101/e/main/e.md').text
+                run = requests.get('https://raw.githubusercontent.com/nobi101/e/main/e.py').text
         elif chon == '4':
-                run = requests.get('https://raw.githubusercontent.com/nobi101/b/main/b.md').text
+                run = requests.get('https://raw.githubusercontent.com/nobi101/b/main/b.py').text
+        elif chon == '5':
+                run = requests.get('https://raw.githubusercontent.com/nobi101/exit/main/exit.py')
         else:
                 run = print('Lựa Chọn Không Xác Định')
 except:
