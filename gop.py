@@ -147,7 +147,7 @@ try:
         elif chon == '4':
                 run = requests.get('https://raw.githubusercontent.com/nobi101/b/main/b.py').text
         elif chon == '5':
-                run = requests.get('https://raw.githubusercontent.com/nobi101/exit/main/exit.py')
+                run = requests.get('https://raw.githubusercontent.com/nobi101/exit/main/exit.py').text
         else:
                 run = print('Lựa Chọn Không Xác Định')
 except:
