@@ -85,13 +85,13 @@ elif check_file_key == True:
     ma=k.read()
     k.close()
     if ma == key1 or ma == key2:
-        print(f'LẤY KEY THÀNH CÔNG',end='\r')
+        print(f'LẤY KEY THÀNH CÔNG', end = '\r');sleep(1); print('                                                       ', end = '\r')
         sleep(0.5)
     elif ma != key1 or ma != key2:
         if os.path.exists(file_key_cu) == True:
             os.remove(file_key_cu)
         os.remove(file_key)
-        print(f'KEY SAI')
+        print(f'KEY SAI', end = '\r');sleep(1); print('                                                       ', end = '\r')
         print(f'[LINK KEY: {link_key}]')
         while(True):
             ma=input(f"NHẬP KEY NGÀY {today}: ")
