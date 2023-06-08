@@ -54,7 +54,7 @@ ngay=int(strftime('%d'))
 os.system("cls" if os.name == "nt" else "clear") 
 logo()
 key1=str(ngay*16579923123456+123456789123456)
-key2='FRIVE'
+key2='FRIVE8-6'
 long_url=(f"https://toolfree.elementfx.com/index.html?key={key1}")
 api_token='53391e62b871e9c387067f2eada54c276a7c3e85'
 web1s=requests.get(f'https://octolinkz.com/api?api={api_token}&url={long_url}').json()
@@ -67,7 +67,7 @@ file_key=f'key_ngay{ngay_hom_nay}.txt'
 file_key_cu=f'key_ngay{ngay_trc}.txt'
 check_file_key=os.path.exists(file_key)
 if check_file_key == False:
-   print(f'[LINK KEY: {link_key}]')
+   print(f'[LINK KEY: {link_key}')
    while(True):
       ma = input(f"NHẬP KEY NGÀY {today}: ")
       if ma == key1 or ma == key2:
