@@ -34,6 +34,7 @@ def logo():
         print('[•] Zalo group: https://zalo.me/g/cdcazh320')
         print('[•] Email: fivetool.official@gmail.com')
         print('[•] Youtube: https://www.youtube.com/@TOOLFRIVE')
+        print(' ')
         
               
 
