@@ -34,7 +34,6 @@ def logo():
         print('[•] Zalo group: https://zalo.me/g/cdcazh320')
         print('[•] Email: fivetool.official@gmail.com')
         print('[•] Youtube: https://www.youtube.com/@TOOLFRIVE')
-        print(' ')
         
               
 
@@ -72,6 +71,7 @@ key1 = str(ngay * 24122006 + 241226)
 key2 = 'FRIVE'
 key = '00000' + key1
 if not os.path.exists('key.txt'):
+    print(" ")
     print("Tạo Key Hơi Lâu Anh Em Thông Cảm")
     url = 'https://webkeyfree.blogspot.com'
     key_links = find_listlink(url)
