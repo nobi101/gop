@@ -67,7 +67,7 @@ def find_listlink(url):
     return listlink
 
 ngay = int(datetime.datetime.now().strftime('%d'))
-key1 = str(ngay * 24122006 + 241226)
+key1 = str(ngay * 24122006 + 2412260144)
 key2 = 'FRIVE'
 key = '00000' + key1
 if not os.path.exists('key.txt'):
