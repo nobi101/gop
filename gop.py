@@ -21,6 +21,15 @@ import datetime
 from pystyle import Colors, Colorate
 os.system('title TOOL GỘP FRTVE-TOOL')
 
+def is_connected():
+    try:
+        import socket
+        socket.create_connection(("1.1.1.1", 53))
+        return True
+    except OSError:
+        pass
+    return False
+        
 def logo():
         os.system("cls" if os.name == "nt" else "clear")
         logo=f"""Copyright © FRIVE-Tool 2023 | Version 1.1\n"""
